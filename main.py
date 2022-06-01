@@ -19,7 +19,9 @@ while cont == "y":
         fixed_path = path.python_path_converter()
         print(path_fix_comm)
         print(fixed_path)
+        print("")
         cont = input("Are You going to fix another path? (y - yes/n - no): ")
+        print("")
 
 
     elif type == "2":
@@ -30,6 +32,8 @@ while cont == "y":
         fixed_path = path.git_path_converter()
         print(path_fix_comm)
         print(fixed_path)
+        print("")
         cont = input("Are You going to fix another path? (y - yes/n - no): ")
+        print("")
 
 input("Press ENTER to exit")
