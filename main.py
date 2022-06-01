@@ -2,13 +2,14 @@ from path_fixer import PathFixer
 
 print("Welcome to the path fixer!")
 print("--------------------------\n")
-print("1 - fixing path for python\n2- fixing path for GIT\n")
+print("1 - fixing path for python\n2 - fixing path for GIT\n")
 
-type = input("Choose Your fixing type: ")
 
 path_fix_comm = ("Your fixed path is: ")
 cont = "y"
 while cont == "y":
+
+    type = input("Choose Your fixing type: ")
 
     if type == "1":
         path_ff = input("Insert path to be fixed: ")
@@ -29,5 +30,6 @@ while cont == "y":
         fixed_path = path.git_path_converter()
         print(path_fix_comm)
         print(fixed_path)
+        cont = input("Are You going to fix another path? (y - yes/n - no): ")
 
 input("Press ENTER to exit")
